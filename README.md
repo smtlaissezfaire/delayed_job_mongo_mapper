@@ -4,8 +4,7 @@
 
 Add the gems to your Gemfile:
 
-    gem 'delayed_job'
-    gem 'delayed_job_mongo_mapper', :git => "git://github.com/thisduck/delayed_job_mongo_mapper.git"
+    gem 'delayed_job_mongo_mapper', :git => "git://github.com/GoLearnUp/delayed_job_mongo_mapper.git"
 
 After running `bundle install`, create the indexes (and don't forget to do this on your production database):
 
@@ -15,4 +14,4 @@ That's it. Use [delayed_job as normal](http://github.com/collectiveidea/delayed_
 
 ## From
 
-This is forked and modified from [delayed_job_mongoid](https://github.com/collectiveidea/delayed_job_mongoid).
+This is forked and modified from [thisduck/delayed_job_mongo_mapper](https://github.com/thisduck/delayed_job_mongo_mapper), which in turn was forked and modified from [delayed_job_mongoid](https://github.com/collectiveidea/delayed_job_mongoid).
