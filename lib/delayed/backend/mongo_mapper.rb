@@ -75,6 +75,27 @@ module Delayed
           self.collection.update({:locked_by => worker_name}, {"$set" => {:locked_at => nil, :locked_by => nil}}, :multi => true)
         end
 
+        # Read error from last_error
+        def error
+          unless instance_variable_defined?(:@error)
+            if last_error
+              backtrace = last_error.split("\n")
+              message = backtrace.shift
+              @error = Exception.new(message)
+              @error.set_backtrace(backtrace)
+            else
+              @error = nil
+            end
+          end
+          @error
+        end
+
+        # Set last error when setting error
+        def error=(error)
+          @error = error
+          self.last_error = "#{error.message}\n#{error.backtrace.join("\n")}" if self.respond_to?(:last_error=)
+        end
+
         def reload(*args)
           reset
           super
