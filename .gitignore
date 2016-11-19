@@ -21,3 +21,5 @@ pkg
 ## PROJECT::SPECIFIC
 .bundle/config
 .rvmrc
+
+.byebug_history

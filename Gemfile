@@ -5,4 +5,5 @@ gem 'bson_ext', '>= 1.12.3'
 group :development do
   gem 'rspec'
   gem 'rake'
+  gem 'pry-byebug'
 end
