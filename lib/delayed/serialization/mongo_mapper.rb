@@ -23,6 +23,7 @@ else
     def encode_with(coder)
       coder["attributes"] = self.attributes
       coder.tag = ['!ruby/MongoMapper', self.class.name].join(':')
+      coder
     end
   end
 end

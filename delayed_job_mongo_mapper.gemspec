@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+require 'date'
 
 Gem::Specification.new do |s|
   s.name              = 'delayed_job_mongo_mapper'
@@ -14,8 +15,8 @@ Gem::Specification.new do |s|
   s.require_paths     = ['lib']
   s.test_files        = Dir.glob('spec/**/*')
 
-  s.add_runtime_dependency      'mongo_mapper', '>= 0.13.1'
-  s.add_runtime_dependency      'delayed_job',  '~> 4.1.1'
+  # s.add_runtime_dependency      'mongo_mapper', '>= 0.15.0'
+  s.add_runtime_dependency      'delayed_job'#,  '~> 4.1.1'
   s.add_runtime_dependency      'tzinfo',       '~> 1.2.2'
   s.add_development_dependency  'rspec',        '>= 3.0'
 end
