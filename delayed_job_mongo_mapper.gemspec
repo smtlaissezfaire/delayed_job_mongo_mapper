@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email             = ['pariser@gmail.com', 'chris@collectiveidea.com', 'brandon@opensoul.com', 'adnan.ali@gmail.com', 'scott@railsnewbie.com']
   s.extra_rdoc_files  = ["LICENSE", "README.md"]
   s.files             = Dir.glob("{lib,spec}/**/*") + %w[LICENSE README.md]
-  s.homepage          = 'http://github.com/GoLearnUp/delayed_job_mongo_mapper'
+  s.homepage          = 'http://github.com/smtlaissezfaire/delayed_job_mongo_mapper'
   s.rdoc_options      = ['--charset=UTF-8']
   s.require_paths     = ['lib']
   s.test_files        = Dir.glob('spec/**/*')
