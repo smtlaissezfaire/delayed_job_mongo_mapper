@@ -8,6 +8,7 @@ require 'delayed/backend/shared_spec'
 require 'pry-byebug'
 
 MongoMapper.database = 'dl_spec'
+Mongo::Logger.logger.level = Logger::FATAL
 
 class Story
   include ::MongoMapper::Document
