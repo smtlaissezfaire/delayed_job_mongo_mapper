@@ -4,10 +4,10 @@ require 'date'
 Gem::Specification.new do |s|
   s.name              = 'delayed_job_mongo_mapper'
   s.summary           = "MongoMapper backend for delayed_job"
-  s.version           = '1.0.10'
-  s.authors           = ['Andrew Pariser', 'Chris Gaffney', 'Brandon Keepers', 'Adnan Ali', 'Scott Taylor']
+  s.version           = '1.1.0'
+  s.authors           = ['Scott Taylor', 'Andrew Pariser', 'Chris Gaffney', 'Brandon Keepers', 'Adnan Ali']
   s.date              = Date.today.to_s
-  s.email             = ['pariser@gmail.com', 'chris@collectiveidea.com', 'brandon@opensoul.com', 'adnan.ali@gmail.com', 'scott@railsnewbie.com']
+  s.email             = ['scott@railsnewbie.com', 'pariser@gmail.com', 'chris@collectiveidea.com', 'brandon@opensoul.com', 'adnan.ali@gmail.com']
   s.extra_rdoc_files  = ["LICENSE", "README.md"]
   s.files             = Dir.glob("{lib,spec}/**/*") + %w[LICENSE README.md]
   s.homepage          = 'http://github.com/smtlaissezfaire/delayed_job_mongo_mapper'
