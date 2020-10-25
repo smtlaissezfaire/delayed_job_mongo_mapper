@@ -24,14 +24,6 @@ module Delayed
           ensure_index ([[:locked_by, -1], [:priority, 1], [:run_at, 1]])
         end
 
-        # def self.before_fork
-        #   ::MongoMapper.connection.close
-        # end
-        #
-        # def self.after_fork
-        #   ::MongoMapper.connection
-        # end
-        #
         def self.db_time_now
           Time.now.utc
         end
